@@ -1,0 +1,13 @@
+package stringdemo;
+
+public class PrintEvenWords {
+
+	public static void main(String[] args) {
+		String sentence = "This is a wonderful day";
+		String[] splitStr = sentence.split(" ");
+		for(String str: splitStr) {
+			System.out.println(str);
+		}
+	}
+
+}

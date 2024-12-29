@@ -1,0 +1,28 @@
+package stringdemo;
+
+public class StringReverseDemo {
+
+	public static String reverse1(String str) {
+		String result = "";
+		for(int i=str.length()-1;i>=0;i--) {
+			result += str.charAt(i);
+		}
+		return result;
+	}
+	
+	public static String reverse2(String str) {
+		StringBuffer sb = new StringBuffer(str);
+		String result = new String(sb.reverse());
+		return result;
+	}
+	
+	
+	public static void main(String[] args) {
+		String str = "welcome";
+		String output = reverse1(str);
+		System.out.println(str);
+		System.out.println(output);
+
+	}
+
+}
