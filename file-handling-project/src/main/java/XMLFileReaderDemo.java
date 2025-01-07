@@ -32,7 +32,5 @@ public class XMLFileReaderDemo {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }
