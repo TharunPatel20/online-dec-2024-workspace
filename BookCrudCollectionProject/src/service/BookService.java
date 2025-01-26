@@ -13,23 +13,23 @@ public class BookService {
 		bookDao = new BookDaoCollectionImpl();
 	}
 	
-	List<BookPojo> getAllBooks(){
+	public List<BookPojo> getAllBooks(){
 		return bookDao.getAllBooks();
 	}
 	
-	BookPojo getABook(int bookId) {
+	public BookPojo getABook(int bookId) {
 		return bookDao.getABook(bookId);
 	}
 	
-	BookPojo addBook(BookPojo newBook) {
+	public BookPojo addBook(BookPojo newBook) {
 		return bookDao.addBook(newBook);
 	}
 	
-	BookPojo updateBook(BookPojo editBook) {
+	public BookPojo updateBook(BookPojo editBook) {
 		return bookDao.updateBook(editBook);
 	}
 	
-	void deleteBook(int bookId) {
+	public void deleteBook(int bookId) {
 		bookDao.deleteBook(bookId);
 	}
 }
