@@ -1,0 +1,53 @@
+package mybeans;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Person {
+	private int personId;
+	private String personFirstname;
+	private String personLastname;
+
+	public Person() {}
+
+	public Person(int personId, String personFirstname, String personLastname) {
+		super();
+		this.personId = personId;
+		this.personFirstname = personFirstname;
+		this.personLastname = personLastname;
+	}
+
+	public int getPersonId() {
+		return personId;
+	}
+
+	@Value("1001")
+	public void setPersonId(int personId) {
+		this.personId = personId;
+	}
+
+	public String getPersonFirstname() {
+		return personFirstname;
+	}
+
+	@Value("Jackie")
+	public void setPersonFirstname(String personFirstname) {
+		this.personFirstname = personFirstname;
+	}
+
+	public String getPersonLastname() {
+		return personLastname;
+	}
+
+	@Value("Chan")
+	public void setPersonLastname(String personLastname) {
+		this.personLastname = personLastname;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [personId=" + personId + ", personFirstname=" + personFirstname + ", personLastName="
+				+ personLastname + "]";
+	}
+}
